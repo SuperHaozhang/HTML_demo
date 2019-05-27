@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        p{
+            text-align: left;
+        }
+        #p02{
+            font-size: 60px;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            color: #00539F;
+            text-shadow: 3px 3px 1px black;
+        }
+        img{
+            background-color: coral;
+        }
+        /*使用伪类给标签加样式*/
+        img:hover{
+            transform: rotate(360deg) scale(1.0);/*设置旋转角度和缩放大小*/
+            z-index:auto ; /*设置显示优先级别*/
+            transition: 2s;
+        }
+        h5,li{
+            text-align: left;
+        }
+        #div01{
+            line-height:30px;
+            border: solid 20px blue;
+            padding: 0px 20px 20px 20px;
+            width: 610px;
+            height: 696px;
+            background-color: #FF9500;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="div01">
+    <p id="p02">Mozilla 酷毙了!</p>
+    <img src="IMG/QQ截图20190527152022.png" alt="彩蛋" title="这是一张动态图">
+    <br>
+    <p id="p01">Mozilla 是一个全球社区，这里聚集着来自五湖四海的</p>
+
+    <ul>
+        <li>技术人员</li>
+        <li>思考者</li>
+        <li>建造者</li>
+    </ul>
+    <br>
+    <p>我们致力于让 Internet 保持活力，保持畅通，人人皆可贡献，人人皆可创造。<br>我们坚信：开放平台的协作对于人的发展至关重要，也决定着我们共同的未来。<br>
+
+        <br>
+        为了达成我们共同的理想，我们遵循一系列的价值观和理念，请参阅  <a href="https:www.baidu.com">Mozilla 宣言</a></p>
+</div>
+</body>
+</html>
