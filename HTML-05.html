@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <style type="text/css">
+
+        label{
+            display: inline-block;
+            min-width: 100px;/*或者 width: 100px;*/
+        }
+        #d0{
+            border: 1px solid black;
+            height: 570px;
+            width: 500px;
+            margin: 0 auto;
+            background-color: beige;
+
+        }
+        div{
+            margin: 50px;
+        }
+        input[type="submit"]{
+            background-color: #2d78f4;
+            border: solid 1px #2d78f4;
+        }
+
+        input[type="tel"]{
+            width: 100px;
+        }
+        div+div{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="get">
+        <div id="d0">
+            <h3 align="center">12306注册页面</h3>
+            <div >
+
+                 <label for="01">*邮件地址:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="name" id="01" >
+                @<select name="emal">
+                    <option value="$">邮箱</option>
+                    <option value="0">163.com</option>
+                    <option value="1">qq.com</option>
+                    <option value="2">gmail.com</option>
+                    <option value="3">cloud.com</option>
+                </select>
+            </div>
+            <div>
+                 <label for="02">*密码</label>
+                <input type="password" name="" id="02">
+            </div>
+            <div>
+                 <label for="03">*确认密码</label>
+                <input type="password" name="" id="03">
+            </div>
+            <div>
+                 <label for="04">*手机验证码</label>
+                <input type="tel" name="" id="04">
+            </div>
+            <div>
+                 <label for="05">*手机号</label>
+                <input type="password" name="" id="05">
+            </div>
+            <div align="center">
+                 <input type="radio" name="">同意条款
+            </div>
+            <div align="center">
+                <input type="submit" name="" value="注册提交" >
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

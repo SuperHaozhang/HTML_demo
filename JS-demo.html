@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS代码</title>
+    <script >
+        function createp() {
+           let p=document.createElement("p");
+           p.textContent="你点击了这个按钮";
+           document.body.appendChild(p);
+        }
+        function a(){
+            let buttons = document.querySelectorAll("button");
+            for(i=0;i<buttons.length;i++){
+                buttons[i].addEventListener("click",createp());
+            }
+        }
+       function b() {
+            document.addEventListener("DOMContentLoaded",a());
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="b()">点我呀</button>
+</body>
+
+</html>

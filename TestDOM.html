@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+        li button {
+            font-size: 8px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My shopping list</h1>
+
+<div>
+    <label for="item">Enter a new item:</label>
+    <input type="text" name="item" id="item">
+    <button>Add item</button>
+
+</div>
+
+<ul>
+
+</ul>
+
+<script>
+    let ul =document.querySelector('ul');
+    let inPut = document.querySelector('input');
+    let buTton = document.querySelector('button');
+    let div = document.querySelector('div');
+    let count=0;
+    function  testButton() {
+
+        let goods = inPut.value+'';
+        if(goods===''){
+            alert("不能为空");
+        }else{
+
+            inPut.value='';
+
+            let span = document.createElement('span');
+            let button = document.createElement('button');
+            let li = document.createElement('li');
+            count++;
+            let deleAll=document.createElement('button');
+            ul.appendChild(li);
+            li.appendChild(span);
+            li.appendChild(button);
+
+            button.textContent='Delete';
+            span.textContent=goods+'';
+            //Button.addEventListener('click',Button.parentNode.remove(li));
+            if(count===1){
+                div.appendChild(deleAll);
+                deleAll.textContent='一键清空';
+            }
+            button.onclick=function(e){
+                ul.removeChild(li);
+            };
+            deleAll.onclick=function(e) {
+                const deAll=document.querySelectorAll('ul > li');
+                for(i=0;i<deAll.length;i++){
+                    ul.removeChild(deAll[i]);
+                }
+            };
+            inPut.focus();
+
+        }
+
+    }
+    buTton.addEventListener('click', testButton);
+</script>
+</body>
+</html>
