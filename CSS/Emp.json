@@ -1,0 +1,140 @@
+[{
+	"empno": 1002,
+	"ename": "Dick",
+	"sal": 1000.0
+}, {
+	"empno": 1003,
+	"ename": "Dick",
+	"sal": 6000.0,
+	"com": 20.0
+}, {
+	"empno": 1111,
+	"ename": "张三",
+	"mgr": 7788,
+	"job": "销售",
+	"hiredate": "三月 4, 2010",
+	"sal": 7000.0,
+	"com": 100.0
+}, {
+	"empno": 1112,
+	"ename": "张三",
+	"mgr": 7788,
+	"job": "销售",
+	"hiredate": "三月 4, 2019",
+	"sal": 2000.0,
+	"com": 100.0
+}, {
+	"empno": 2000,
+	"ename": "joke"
+}, {
+	"empno": 2001,
+	"ename": "joke2"
+}, {
+	"empno": 2002,
+	"ename": "joke"
+}, {
+	"empno": 2003,
+	"ename": "joke2"
+}, {
+	"empno": 7369,
+	"ename": "SMITH",
+	"mgr": 7902,
+	"job": "CLERK",
+	"hiredate": "十二月 17, 1980",
+	"sal": 800.0
+}, {
+	"empno": 7499,
+	"ename": "ALLEN",
+	"mgr": 7698,
+	"job": "SALESMAN",
+	"hiredate": "二月 20, 1981",
+	"sal": 1600.0,
+	"com": 300.0
+}, {
+	"empno": 7521,
+	"ename": "WARD",
+	"mgr": 7698,
+	"job": "SALESMAN",
+	"hiredate": "二月 22, 1981",
+	"sal": 1250.0,
+	"com": 500.0
+}, {
+	"empno": 7566,
+	"ename": "JONES",
+	"mgr": 7839,
+	"job": "MANAGER",
+	"hiredate": "四月 2, 1981",
+	"sal": 2975.0
+}, {
+	"empno": 7654,
+	"ename": "MARTIN",
+	"mgr": 7698,
+	"job": "SALESMAN",
+	"hiredate": "九月 28, 1981",
+	"sal": 1250.0,
+	"com": 1400.0
+}, {
+	"empno": 7698,
+	"ename": "BLAKE",
+	"mgr": 7839,
+	"job": "MANAGER",
+	"hiredate": "五月 1, 1981",
+	"sal": 2850.0
+}, {
+	"empno": 7782,
+	"ename": "CLARK",
+	"mgr": 7839,
+	"job": "MANAGER",
+	"hiredate": "六月 9, 1981",
+	"sal": 2450.0
+}, {
+	"empno": 7788,
+	"ename": "SCOTT",
+	"mgr": 7566,
+	"job": "ANALYST",
+	"hiredate": "七月 13, 1987",
+	"sal": 20000.0,
+	"com": 200.0
+}, {
+	"empno": 7839,
+	"ename": "KING",
+	"job": "PRESIDENT",
+	"hiredate": "十一月 17, 1981",
+	"sal": 5000.0
+}, {
+	"empno": 7844,
+	"ename": "TURNER",
+	"mgr": 7698,
+	"job": "SALESMAN",
+	"hiredate": "九月 8, 1981",
+	"sal": 1500.0,
+	"com": 0.0
+}, {
+	"empno": 7876,
+	"ename": "ADAMS",
+	"mgr": 7788,
+	"job": "CLERK",
+	"hiredate": "七月 13, 1987",
+	"sal": 1100.0
+}, {
+	"empno": 7900,
+	"ename": "JAMES",
+	"mgr": 7698,
+	"job": "CLERK",
+	"hiredate": "十二月 3, 0981",
+	"sal": 950.0
+}, {
+	"empno": 7902,
+	"ename": "FORD",
+	"mgr": 7566,
+	"job": "ANALYST",
+	"hiredate": "十二月 13, 1981",
+	"sal": 3000.0
+}, {
+	"empno": 7934,
+	"ename": "MILLER",
+	"mgr": 7782,
+	"job": "CLERK",
+	"hiredate": "一月 23, 1982",
+	"sal": 1300.0
+}]

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button class="continue">测试js获取对象</button>
+    <button class="pre">测试js获取对象</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        let continueButton=document.querySelector("button.continue");
+        continueButton.addEventListener('click',function () {
+            continueButton.innerHTML='Next Step...';
+        });
+
+        let $preButton=$('button.pre');
+        $preButton.click(function () {
+
+            $preButton.html('Prev Step');
+        });
+    </script>
+</body>
+</html>
