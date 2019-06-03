@@ -29,7 +29,7 @@
         let table = document.querySelector("table");
         let tbody = document.createElement("tbody");
         table.appendChild(tbody);
-        let header = ["empNo", "eName", "job", "mgr", "hireDate", "sal", "com", "deptNo"];
+        let header = ["empno", "ename", "job", "mgr", "hiredate", "sal", "com", "deptno"];
         // 创建表头
         let headerTr = document.createElement("tr");
         tbody.appendChild(headerTr);
@@ -39,7 +39,7 @@
             th.textContent = header[i];
             headerTr.appendChild(th);
         }
-        let requestURL = "http://127.0.0.1/Emp.json";
+        let requestURL = "https://superhaozhang.github.io/HTML_demo/CSS/Emp.json";
         let request = new XMLHttpRequest();
         request.open("GET", requestURL);
         request.responseType = "json";

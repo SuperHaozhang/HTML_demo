@@ -8,6 +8,7 @@
     <button class="continue">测试js获取对象</button>
     <button class="pre">测试js获取对象</button>
 
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
         let continueButton=document.querySelector("button.continue");
@@ -17,8 +18,19 @@
 
         let $preButton=$('button.pre');
         $preButton.click(function () {
-
             $preButton.html('Prev Step');
+
+        });
+
+
+        let requestURL='https://superhaozhang.github.io/HTML_demo/CSS/Emp.json';
+        $.ajax({
+           url: requestURL,
+            method:'GET',
+           dataType:'json',
+           success:function (response) {
+               alert(response[15]['sal']);
+           }
         });
     </script>
 </body>
