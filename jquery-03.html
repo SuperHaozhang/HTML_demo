@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        table {
+            margin: 50px auto 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+            vertical-align: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+
+    let requestURL='https://superhaozhang.github.io/HTML_demo/CSS/Emp.json';
+    let requestURL2='https://superhaozhang.github.io/HTML_demo/CSS/city.json';
+
+    $(function () {
+        $.ajax({
+            url: requestURL2,
+            method:'GET',
+            dataType:'json',
+            success:function (res) {
+                let $select=$("<select class='s1' onchange='city(),area()'><lect>");
+                $('body').append($select);
+                for (let i = 0; i <res.length ; i++) {
+                    let $option=$("<option value="+i+"></option>");
+                    $select.append($option);
+                    $option.html(res[i]['name']);
+                }
+            }
+        });
+    });
+
+
+    function city() {
+        $.ajax({
+            url: requestURL2,
+            method:'GET',
+            dataType:'json',
+            success:function (res) {
+                $('.se2').remove();
+                let $select2=$("<select class='se2' onchange='area()'><lect>");
+                $('body').append($select2);
+                let num=$("select[class='s1']").val();
+                for (let j = 0; j <res[num]['city'].length ; j++) {
+                    let $option=$("<option class='op1' value="+j+"></option>");
+                    $select2.append($option);
+                    $option.html(res[num]['city'][j]['name']);
+                }
+                /*let $option2=$("<option  selected=\"selected\">请选择</option>");
+                $select2.append($option2);
+                $option2.html('请选择');*/
+            }
+
+        });
+    }
+
+
+    function area() {
+        $.ajax({
+            url: requestURL2,
+            method:'GET',
+            dataType:'json',
+            success:function (res) {
+                $('.se3').remove();
+                let $select3=$("<select class='se3'><lect>");
+                $('body').append($select3);
+                let num=$("select[class='s1']").val();
+                let num2=$("select[class='se2']").val();
+                for (let k = 0; k <res[num]['city'][num2]['area'].length ; k++) {
+                    let $option=$("<option class='op2'></option>");
+                    $select3.append($option);
+                    $option.html(res[num]['city'][num2]['area'][k]);
+                }
+                /*let $option3=$("<option  selected=\"selected\">请选择</option>");
+                $select3.append($option3);
+                $option3.html('请选择');*/
+            }
+        });
+    }
+    
+
+</script>
+</body>
+</html>
